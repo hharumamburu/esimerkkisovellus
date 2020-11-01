@@ -29,3 +29,11 @@ const getUser = async (id) => {
 };
 
 getCat();
+
+const getUser = async (id) => {
+  const response = await fetch(url + '/user/' + id);
+  const user = await response.json();
+  return user;
+};
+
+getCat();
